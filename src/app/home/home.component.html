@@ -1,0 +1,37 @@
+
+<div class="container" *ngFor="let platillo of platillos">
+  <br>
+    <div class="card" style="background-color:rgba(53, 50, 50, 0.651); border-color:rgb(0, 0, 0); border-radius: 10px; display: flex;">
+        <div class="container">
+
+          <div class="row">
+              <!-- aqui va la imagen -->
+              <div class="col-md-6" >
+                <img src="{{platillo.imagen}}" class="img-rounded" height="350px">
+              </div>
+
+              <!-- aquí va el otro texto -->
+              <div class="col-md-6">
+                <h3 style="text-align: center;" class="titulo_platillo">{{platillo.nombre}} ${{platillo.precio}}</h3>
+
+                  <div class="contendor_descripcion">
+                    {{platillo.descripcion}}
+                  </div>
+
+                  <div class="contenedor_acompanamientos">
+                    {{platillo.acompanamientos}}
+                  </div>
+
+                  <div class="estrellitas" style="font-size: 30px;; color: rgb(252, 252, 252);">
+                    <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false" ></ngb-rating>
+                  </div>
+
+              </div>
+          </div>
+
+        </div>
+    </div>
+
+</div>
+
+

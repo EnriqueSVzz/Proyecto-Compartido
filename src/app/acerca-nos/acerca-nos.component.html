@@ -1,0 +1,35 @@
+
+<div class="container">
+  <br>
+
+  <div>
+    <h1 class>Acerca de Nosotros</h1>
+
+    <!-- podemos iterar una serie de sucursales -->
+
+    <h2>Sucursales de Mexican Grill</h2>
+
+    <div class="card" *ngFor="let s of sucursalesIterar" style="height: 70%; width:auto; ">
+
+      <div class="card-body">
+        <div class="row">
+          <!-- imagen -->
+          <div class="col-sm-6">
+            <img src="{{s.imagen}}" class="img-fluid rounded-left" alt="">
+          </div>
+          <!-- texto -->
+          <div class="col-sm-6">
+              <h3>{{s.ciudad}}</h3>
+              <h4 class="">Ubiquenos aquí:</h4>
+              <p> {{s.ubicacion}}</p>
+              <h4 class=""> Nuestro Telefono: </h4>
+              <p>{{s.telefono}}</p>
+              <p>Código Postal : {{s.cp}}</p>
+              <button type="button" class="btn btn-primary"><a Target="_blank" href="{{s.direccion}}">Ir a ubicación</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

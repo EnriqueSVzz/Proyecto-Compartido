@@ -1,0 +1,12 @@
+.titulo
+{
+  font-size: 35px;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow';
+  text-rendering: unset;
+}
+.cuadro-titulo{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+

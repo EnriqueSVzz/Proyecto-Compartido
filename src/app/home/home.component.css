@@ -1,0 +1,27 @@
+.titulo_platillo{
+  margin-top: 50px;
+  color: cornsilk;
+  font-family: fantasy;
+  text-rendering: auto;
+  background-color: rgb(97, 97, 97);
+}
+
+.contendor_descripcion{
+  color: cornsilk;
+  margin-top: 30px;
+  text-align: justify;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-size: 23px;
+}
+
+.contenedor_acompanamientos{
+  color: cornsilk;
+  margin-top: 20px;
+}
+
+img{
+  border-radius: 20px;
+  height: auto;
+  width: 30rem;
+}
